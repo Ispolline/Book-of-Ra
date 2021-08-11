@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: uk.co.samuelwall:material-tap-target-prompt:3.3.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ab5cf9e3146ca1ea2e7e4a389bb5c2a4/jetified-material-tap-target-prompt-3.3.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ab5cf9e3146ca1ea2e7e4a389bb5c2a4/jetified-material-tap-target-prompt-3.3.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ab5cf9e3146ca1ea2e7e4a389bb5c2a4/jetified-material-tap-target-prompt-3.3.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/uk.co.samuelwall/material-tap-target-prompt/3.3.0/caad6e1578b45b02340c4bec10a65a42cb24715e/material-tap-target-prompt-3.3.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/uk.co.samuelwall/material-tap-target-prompt/3.3.0/353fcff00cd65e329b9414f75f061a5c38587db5/material-tap-target-prompt-3.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">bookravulk</string>
+    <string name="title">Book of Ra</string>
+    <string name="touch">ЖМИ</string>
+    <string name="point">STAKE: </string>
+    <string name="balance">BALANCE: </string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activation_with_sms">Для продолжения, Вам необходимо авторизоваться по номеру-телефона</string>
+    <string name="write_name">Введите имя</string>
+    <string name="please_click_back_to_exit">Ешё раз нажмите кнопку назад, чтобы выйти из приложения</string>
+    <string name="send_code">Введите код подтверждения отправленный по номеру </string>
+    <string name="next">Продолжить</string>
+    <string name="wrong_number">Неверный номер?</string>
+    <string name="repeat_send_sms">Повторно код можно отправить через </string>
+    <string name="send_sms">Отправить повторно</string>
+    <string name="hint_balance">Актуальный баланс</string>
+    <string name="hint_points">Нажмите чтобы повысить ставку</string>
+    <string name="hint_start">Нажмите чтобы начать игру</string>
+
+
+</resources>
