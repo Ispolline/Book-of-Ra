@@ -74,6 +74,8 @@ class MainActivity : AppCompatActivity(), IEventEnd {
 
     lateinit var prefs: SharedPreferences
 
+    var timerPush: CountDownTimer? = null
+
     var pointsArray = arrayListOf<PointsModel>(
         PointsModel(5, 5),
         PointsModel(5, 5),
@@ -88,6 +90,8 @@ class MainActivity : AppCompatActivity(), IEventEnd {
 
     var mediaPlayer : MediaPlayer? = null
     var slotPlayer : MediaPlayer? = null
+
+    var isTouched: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -138,6 +142,14 @@ class MainActivity : AppCompatActivity(), IEventEnd {
             if(prefs.hint != Hint.FINISH.toString()){
                 return@setOnClickListener
             }
+
+            if (timerPush != null){
+                timerPush?.cancel()
+                timerPush = null
+            }
+
+            isTouched = true
+
             if(prefs.slot){
                 startSlot()
             }
@@ -203,6 +215,7 @@ class MainActivity : AppCompatActivity(), IEventEnd {
             startHint()
         }
         startHint()
+        setupTimer()
     }
 
     fun openDialog(){
@@ -225,6 +238,20 @@ class MainActivity : AppCompatActivity(), IEventEnd {
                 }
             }
         }.start()
+    }
+
+    fun setupTimer(){
+        timerPush = object : CountDownTimer(6000, 100) {
+            override fun onTick(millisUntilFinished: Long) {
+
+            }
+
+            override fun onFinish() {
+                if(!isTouched){
+                pushBtn.callOnClick()}
+            }
+        }
+
     }
 
     override fun eventEnd(result: Int, count: Int) {
@@ -386,6 +413,7 @@ class MainActivity : AppCompatActivity(), IEventEnd {
                         }
                         Hint.START -> {
                             prefs.hint = Hint.FINISH.toString()
+                            timerPush?.start()
                         }
                     }
                 }
